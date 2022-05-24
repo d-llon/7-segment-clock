@@ -20,11 +20,7 @@ void loop() {
     matrix_left.drawColon(draw_colon);
     matrix_left.writeDisplay();
     
-    if (draw_colon) {
-        draw_colon = false;
-    } else {
-        draw_colon = true;
-    }
+    draw_colon = !draw_colon;
     
     delay(1000);
-}x
+}
